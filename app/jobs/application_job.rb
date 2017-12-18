@@ -1,2 +1,3 @@
-class ApplicationJob < ActiveJob::Base
+class ApplicationJob
+  include Faktory::Job
 end
