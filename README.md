@@ -1,24 +1,3 @@
-# README
+# faktory-rails-example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app is a minimal functioning application written in Rails 5 intended to illustrate installing, configuring, and building background jobs with Faktory.  Play with a [live example here](https://faktory-rails-example.herokuapp.com/)
