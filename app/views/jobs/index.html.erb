@@ -4,7 +4,7 @@
 
 <p>
 This is a simple app used to illustrate using <a href='https://github.com/contribsys/faktory'>Faktory</a> on Rails. Submit a message below and it will show you when the job is queued and when it is done executing.
-You will have to <a href='/'>reload</a> your page to see the updated execution time...it should appear after about 5 seconds. You can watch the jobs through <a href="<%= ENV['ACK_FOUNDRY_WEB_URL'] %>">Faktory's web UI</a> as well.
+You will have to <a href='/'>reload</a> your page to see the updated execution time...it should appear after about 5 seconds. You can watch the jobs through <a href="<%= ENV['ACK_FOUNDRY_WEB_URL'] %>" target='_blank'>Faktory's web UI</a> as well.
 </p>
 
 <%= form_for @new_job do |f| %>
