@@ -1,12 +1,12 @@
 class ExampleJob < ApplicationJob
   faktory_options queue: :examples
 
-  def perform(message)
-    puts "===> creating new message..."
-    job = Job.create!(message: message)
+  def perform(job_id)
     puts "===> transmitting new message..."
+    job = Job.find(job_id)
     sleep 5
     puts job.message
+    job.update!(executed_at: DateTime.now)
     puts '<=== done.'
   end
 end

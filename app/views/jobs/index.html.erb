@@ -1,3 +1,26 @@
 <h1>
   Let's work!
 </h1>
+
+<%= form_for @new_job do |f| %>
+  <%= f.label :message %>
+  <%= f.text_field :message %>
+
+  <%= f.submit %>
+<% end %>
+
+<h3>
+  Recent jobs
+</h3>
+
+<ul>
+  <% @jobs.each do |job| %>
+    <li>
+      <b>"<%= job.message %>"</b>
+      <ul>
+        <li><em>Queued At: <%= job.created_at %></em></li>
+        <li><em>Executed At: <%= job.executed_at %></em></li>
+      </ul>
+    </li>
+  <% end %>
+</ul>
